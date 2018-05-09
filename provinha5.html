@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      window.onload = function() {
+        var n1=["i9lab","marcelo","daniel","felipe","lucas","guilherme","cesar","adriana","claudio","garagem"];
+        var n2=["banana","maça","pera","leite","morango","chocolate","viado","cafe","leite","agua"];
+        var n3=["sabao","cra","cra","cre","cre","cri","cri","cro","cro","cru"];
+        var n4=["oi","tchau","fala","beleza","suave","tchau","fui","flw","bye","hahaha"];
+        var n5=["computer","video","tv","sala","cozinha","banheiro","quarto","telhado","porao","fundo"];
+
+        var tb = '';
+        console.log(n1.length);
+        tb+='<tr>';
+        for (var i = 0; i < n1.length; i++) {
+          tb += '<td>'+n1[i]+'</td>';
+          console.log(n1[i]);
+        }
+        tb+='</tr>';
+        tb+='<tr>';
+        for (var i = 0; i < n2.length; i++) {
+          tb += '<td>'+n2[i]+'</td>';
+          console.log(n2[i]);
+        }
+        tb+='</tr>';
+        tb+='<tr>';
+        for (var i = 0; i < n3.length; i++) {
+          tb += '<td>'+n3[i]+'</td>';
+          console.log(n3[i]);
+        }
+        tb+='<tr>';
+        for (var i = 0; i < n4.length; i++) {
+          tb += '<td>'+n4[i]+'</td>';
+          console.log(n4[i]);
+        }
+        tb+='</tr>';
+        tb+='<tr>';
+        for (var i = 0; i < n5.length; i++) {
+          document.getElementById('tb1').innerHTML += '<td>'+n5[i]+'</td>';
+          console.log(n5[i]);
+        }
+        tb+='</tr>';
+        document.getElementById('tb1').innerHTML = tb;
+      }
+    </script>
+
+
+
+
+
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <table id="tb1" class=" table table-dark">
+
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
